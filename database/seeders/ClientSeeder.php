@@ -21,5 +21,21 @@ class ClientSeeder extends Seeder
             'phone' => '1234567890',
             'user_id' => 1,
         ]);
+
+        DB::table('clients')->insert([
+            'first_name' => 'Jane',
+            'last_name' => 'Doe',
+            'email' => 'janedoe@test.com',
+            'phone' => '0987654321',
+            'user_id' => 2,
+        ]);
+
+        DB::table('clients')->insert([
+            'first_name' => 'Ana',
+            'last_name' => 'Anić',
+            'email' => 'anaanic@test.com',
+            'phone' => '0984354321',
+            'user_id' => 3,
+        ]);
     }
 }
